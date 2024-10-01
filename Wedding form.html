@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Attendance Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Event Attendance Form</h2>
+<form action="/submit" method="POST">
+    <label>Are you attending?</label>
+    <label>
+        <input type="radio" name="attendance" value="yes" required> Yes
+    </label>
+    <label>
+        <input type="radio" name="attendance" value="no"> No
+    </label>
+
+    <label for="fullName">Full Name:</label>
+    <input type="text" id="fullName" name="fullName" required>
+
+    <label for="partnerNames">Partner Names:</label>
+    <input type="text" id="partnerNames" name="partnerNames">
+
+    <label for="dietaryRequirements">Dietary Requirements:</label>
+    <textarea id="dietaryRequirements" name="dietaryRequirements" rows="4"></textarea>
+
+    <label>Halaal or Normal:</label>
+    <label>
+        <input type="radio" name="dietType" value="halaal" required> Halaal
+    </label>
+    <label>
+        <input type="radio" name="dietType" value="normal"> Normal
+    </label>
+
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Background with Gold Text</title>
+    <style>
+        body {
+            background-color: black; /* Set background color to black */
+            color: gold; /* Set text color to gold */
+            font-family: Arial, sans-serif; /* Optional: set font */
+            text-align: center; /* Optional: center the text */
+            padding: 20px; /* Optional: add some padding */
+        }
+    </style>
+</head>
+<body>
+
+<h1>Welcome to My Page</h1>
+<p>This is an example of a black background with gold text.</p>
+<p>Enjoy the contrast!</p>
+
+</body>
+</html>
+<form
+  action="https://formspree.io/f/mldrqzrj"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
+  
